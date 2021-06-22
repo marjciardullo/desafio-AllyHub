@@ -93,3 +93,21 @@ document.querySelector("#course-form").addEventListener("submit", (e) => {
     ui.clearField();
   }
 });
+
+
+
+
+const searchCourse = document.querySelector('#search')
+searchCourse.addEventListener('keyup', (e) => {
+    const name = e.target.value.toLowerCase();
+    const curso = document.querySelector('.table-content')
+    const search = curso.getElementsByTagName('tr')
+    Array.from(search).forEach(function(cursos){
+        const title = cursos.firstElementChild.textContent;
+        if(title.toLowerCase().indexOf(name) != -1){
+            cursos.style.display = 'block'
+        } else {
+            cursos.style.display = 'none'
+        }
+    })
+})

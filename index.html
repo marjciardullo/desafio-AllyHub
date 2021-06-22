@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css" />
     <title>Cadastre seu curso</title>
   </head>
@@ -19,7 +22,7 @@
         </div>
 
 
-        <div class="container">
+        <div class="content">
             <div class="left-side">
                 <div class="item">
                     <div class="border-input">
@@ -27,8 +30,9 @@
 
                             <div class="form-field">
                                 <label for="title">Nome do curso:</label>
-                                <br />
+                                <br/>
                                 <input type="text" id="title" />
+
                             </div>
                 
                             <div class="form-field">
@@ -55,10 +59,32 @@
                                 <textarea id="description"></textarea>
                             </div>
                 
-                            <input type="submit" value="Cadastrar">
+                            <input type="submit" value="Cadastrar" id="button">
                             </form>
                     </div>
                     
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="item">
+                    <div class="input-search">
+                        <input type="text" id="search"/>
+                        <button class="btn">search</button>
+                    </div>
+                    <div class="courses-box">
+                      <table class="table-content">
+                        <thead>
+                          <tr id="table-header">
+                            <th>Curso</th>
+                            <th>Início</th>
+                            <th>Término</th>
+                            <th>Duração</th>
+                            <th>Descrição</th>
+                          </tr>
+                        </thead>
+                        <tbody id="courses-list"></tbody>
+                      </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,22 +93,8 @@
         </div>
 
        
-          <input type="text" placeholder="busque um curso" />
-          <button>search</button>
-        <div class="courses-box">
-            <h1>Lista de cursos</h1>
-          <table class="table-content">
-            <thead>
-              <tr id="table-header">
-                <th>Course</th>
-                <th>Duraction</th>
-                <th>Sdate</th>
-                <th>Edate</th>
-              </tr>
-            </thead>
-            <tbody id="courses-list"></tbody>
-          </table>
-        </div>
+          
+        
 
     </section>
 
