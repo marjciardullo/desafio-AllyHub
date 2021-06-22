@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Cadastre seu curso</title>
+  </head>
+  <body>
+    <section class="container">
+        <div class="title">
+            <div class="left-side">
+                <h2>Cadastre um curso:</h2>
+            </div>
+            <div class="right-side">
+                <h2>Lista de cursos</h2>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="left-side">
+                <div class="item">
+                    <div class="border-input">
+                        <form id="course-form">
+
+                            <div class="form-field">
+                                <label for="title">Nome do curso:</label>
+                                <br />
+                                <input type="text" id="title" />
+                            </div>
+                
+                            <div class="form-field">
+                                <label for="title">Data de início:</label>
+                                <br />
+                                <input type="date" id="Sdate" />
+                            </div>
+                
+                            <div class="form-field">
+                                <label for="title">Data de término:</label>
+                                <br />
+                                <input type="date" id="Edate" />
+                            </div>
+                
+                            <div class="form-field">
+                                <label for="title">Duração do curso (em anos):</label>
+                                <br />
+                                <input type="number" id="duraction" />
+                            </div>
+                
+                            <div class="form-field">
+                                <label for="title">Descrição do curso:</label>
+                                <br />
+                                <textarea id="description"></textarea>
+                            </div>
+                
+                            <input type="submit" value="Cadastrar">
+                            </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+            
+
+        </div>
+
+       
+          <input type="text" placeholder="busque um curso" />
+          <button>search</button>
+        <div class="courses-box">
+            <h1>Lista de cursos</h1>
+          <table class="table-content">
+            <thead>
+              <tr id="table-header">
+                <th>Course</th>
+                <th>Duraction</th>
+                <th>Sdate</th>
+                <th>Edate</th>
+              </tr>
+            </thead>
+            <tbody id="courses-list"></tbody>
+          </table>
+        </div>
+
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
